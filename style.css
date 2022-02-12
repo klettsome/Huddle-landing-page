@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Custom Variables */
+:root {
+  --color-primary: hsl(257, 40%, 49%);
+  --color-secondary: hsl(300, 69%, 71%);
+  --color-light: hsl(0, 0%, 95%);
+  --color-light-desaturated: hsla(0, 0%, 95%, 0.9);
+
+  --ff-primary: 'Open Sans', sans-serif;
+  --ff-headings: 'Poppins', sans-serif;
+
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
+}
+
+/* Base styles */
+body {
+  background-color: var(--color-primary);
+  min-height: 100vh;
+  background-image: url(/images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: var(--color-light);
+  font-family: var(--ff-primary);
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out,
+    border-color 0.4s ease-in-out;
+}
+
+/* Utilities */
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 2.3rem;
+}
+
+/* Header */
+.logo-container {
+  padding: 2rem 0;
+  margin-bottom: 1.8625rem;
+}
+
+.logo-img {
+  width: 40.7%;
+  display: block;
+}
+
+/* Hero */
+.hero-image-container {
+  margin-bottom: 3.75rem;
+}
+
+.hero-content {
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 4rem;
+}
+
+.hero-content h1 {
+  margin-bottom: 1rem;
+  font-family: var(--ff-headings);
+}
+
+.hero-content p {
+  color: var(--color-light-desaturated);
+  margin-bottom: 1.5rem;
+}
+
+.btn-register {
+  background-color: var(--color-light);
+  border-radius: 20px;
+  padding: 0.625rem 4.6875rem;
+  font-family: var(--ff-headings);
+  font-size: 0.75rem;
+  color: var(--color-primary);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-register:hover,
+.btn-register:active {
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+}
+
+/* Social Links */
+.social-links {
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.social-links-flex-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 0.625rem;
+}
+
+.social-link {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid var(--color-light);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--color-light);
+}
+
+.social-link:hover,
+.social-link:active {
+  color: var(--color-secondary);
+  border-color: var(--color-secondary);
+}
+
+/* Attribution */
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: var(--color-secondary);
+}
